@@ -89,7 +89,7 @@
   margin-left: -40px;
 }
 
-.search-buttonarab{
+.search-buttonarab {
   background-color: #004f9a;
   border: none;
   color: white;
@@ -432,6 +432,8 @@
     font-size: 0.8em !important;
   }
 
+  .accoutList {}
+
   .cart-total {
     font-size: 0.9em !important;
   }
@@ -451,10 +453,21 @@
 
 
   .navbar-search {
-    width: 60% !important;
+    width: 50% !important;
+    margin-left: 7px !important;
+  }
+
+  .logo {
+    margin-left: 5px !important;
+  }
+
+  .trans {
+    margin-left: 7px;
+    padding: 2px;
   }
 
 }
+
 
 
 .cont {
@@ -574,44 +587,42 @@
 
 /* El khall Bahagt work */
 
-.accoutList button
-{
+.accoutList button {
   background-color: #0071dc;
   border: none;
   color: white;
 }
 
-.accoutList button:hover
-{
+.accoutList button:hover {
   background-color: #052369;
 }
 
-.accList
-{
+.accList {
   padding: 15px;
   color: #2e2f32;
   font-size: 14px;
 }
-.accList1{
+
+.accList1 {
   border-bottom: 1px #ccc solid;
 
 }
 
-.accList a{
+.accList a {
   padding: 10px;
 }
 
 
 /* active link reorder */
 
-.active
-{
+.active {
   background-color: #dbdbdb;
   border-bottom: 1px solid #bbbbbb;
-  color:#333 ;
+  color: #333;
   border-radius: 5px;
 }
-.accList11:hover{
+
+.accList11:hover {
   background-color: #dbdbdb;
   font-weight: 600;
   border-radius: 5px;

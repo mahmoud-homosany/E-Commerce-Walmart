@@ -19,6 +19,32 @@ img {
   border-radius: 10px;
 }
 
+@media (max-width: 768px) {
+  .small {
+    display: block !important;
+  }
+
+  .large {
+    display: none;
+  }
+
+  .third img {
+    height: 85%;
+    padding-top: 5px;
+  }
+
+  .small img {
+    height: 85%;
+    padding-top: 1px;
+  }
+
+  video {
+    height: 400px !important;
+    border-radius: 10px;
+    margin-right: 10px;
+
+  }
+}
 
 
 /* /////////////////////

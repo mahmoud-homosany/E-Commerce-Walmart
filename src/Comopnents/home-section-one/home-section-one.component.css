@@ -74,3 +74,16 @@ img {
   /* Styling for the "Read more" link */
   cursor: pointer;
 }
+
+
+@media (max-width: 768px) {
+  .small {
+    display: block !important;
+  }
+
+  .large {
+    display: none;
+  }
+
+
+}

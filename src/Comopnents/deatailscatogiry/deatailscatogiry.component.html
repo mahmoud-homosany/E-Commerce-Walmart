@@ -102,10 +102,10 @@
         <br>
         <div class="row">
 
-          <div class="first col-5">
+          <div class="first col-6 col-md-5 large">
             <a href=""><img src="/toy/WhatsApp Image 2024-11-12 at 9.46.44 PM.jpeg" alt=""></a>
           </div>
-          <div class="seconde col-4">
+          <div class="seconde col-12 col-md-4">
             <a href=""> <img src="/toy/WhatsApp Image 2024-11-12 at 9.47.28 PM.jpeg" alt=""></a>
 
 
@@ -114,7 +114,10 @@
 
 
           </div>
-          <div class="third col-3 ">
+          <div class="first col-6 col-md-5 small" style="display: none;">
+            <a href=""><img src="/toy/WhatsApp Image 2024-11-12 at 9.46.44 PM.jpeg" alt=""></a>
+          </div>
+          <div class="third col-6 col-md-3 ">
             <a href=""> <img src="/toy/WhatsApp Image 2024-11-12 at 9.46.25 PM.jpeg" alt=""></a>
           </div>
         </div>
@@ -198,7 +201,8 @@
     <div class="image-row d-flex flex-wrap justify-content-center">
 
       @if(lang == 'en'){
-      <div *ngFor="let subcat of SubCatinCatEn" class="image-container col-2" (click)="products(subcat.id)">
+      <div *ngFor="let subcat of SubCatinCatEn" class="image-container col-5 col-md-3 col-lg-2 "
+        (click)="products(subcat.id)">
         <a [routerLink]="['/allproduct', subcat.id]">
           <img [src]="subcat.image" />
           <p class="text-center">{{ subcat.name_en }}</p>
