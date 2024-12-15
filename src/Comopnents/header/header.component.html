@@ -175,13 +175,13 @@
 
           @if(user.id == null){
           <a routerLink="SignOrRegister" routerLinkActive="active_link"
-            class="us user action-item">{{'header.Sign_In_Account'|translate}} <span><i class="fa-regular fa-user"
+            class=" user action-item">{{'header.Sign_In_Account'|translate}} <span><i class="fa-regular fa-user"
                 style="color: #FFD43B;"></i></span></a>
           }
 
           @if(user.id != null){
           <a routerLink="account" routerLinkActive="active_link" class="user action-item">{{user.firstName}} <span><i
-                class="us fa-regular fa-user" style="color: #FFD43B;"></i></span></a>
+                class=" fa-regular fa-user" style="color: #FFD43B;"></i></span></a>
           }
           <!-- <a routerLink="/" class="cart-icon">
           <i class="fa fa-shopping-cart " style="color: #FFD43B;"></i>
