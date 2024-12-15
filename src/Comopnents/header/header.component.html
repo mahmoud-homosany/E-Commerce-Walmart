@@ -204,19 +204,21 @@
     <div class="navbar-bottom col-s-12" style="height: 48px;">
       <div class="locsmall ">
 
-        <!-- <p>{{'header.How_do_you_want_your_items?'| translate}}</p> -->
+        <p>{{'header.How_do_you_want_your_items?'| translate}}</p>
 
+        <p>
 
-        @if(user.id == null){
-        <a routerLink="SignOrRegister" routerLinkActive="active_link"
-          class="user action-item">{{'header.Sign_In_Account'|translate}} <span><i class="fa-regular fa-user"
-              style="color: #FFD43B;"></i></span></a>
-        }
+          @if(user.id == null){
+          <a routerLink="SignOrRegister" routerLinkActive="active_link"
+            class="user action-item">{{'header.Sign_In_Account'|translate}} <span><i class="fa-regular fa-user"
+                style="color: #FFD43B;"></i></span></a>
+          }
 
-        @if(user.id != null){
-        <a routerLink="account" routerLinkActive="active_link" class="user action-item">{{user.firstName}} <span><i
-              class=" fa-regular fa-user" style="color: #FFD43B;"></i></span></a>
-        }
+          @if(user.id != null){
+          <a routerLink="account" routerLinkActive="active_link" class="user action-item">{{user.firstName}} <span><i
+                class=" fa-regular fa-user" style="color: #FFD43B;"></i></span></a>
+          }
+        </p>
 
 
         <div class="flex  items-center blue mr-1 mh-1" style="margin-right: 10px;">|</div>
