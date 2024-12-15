@@ -1,5 +1,5 @@
 import { NgFor, NgIf } from '@angular/common';
-import { Component, HostListener, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, DoCheck, HostListener, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ICategoryAr, ICategoryEn } from '../../InterFaces/category';
 import { CategoryService } from '../../Services/Category/category.service';
@@ -18,7 +18,7 @@ import { LanguageService } from '../../Services/Language/language.service';
   styleUrls: ['./category.component.css']
 
 })
-export class CategoryComponent implements OnInit, OnChanges {
+export class CategoryComponent implements OnInit, OnChanges, DoCheck {
 
   // url:string = "http://localhost:5004"
   url = `${environment.url}`;
@@ -26,6 +26,9 @@ export class CategoryComponent implements OnInit, OnChanges {
   AllCAtegoryAr: ICategoryAr[] = [] as ICategoryAr[];
   lang: string = ''
   constructor(private _languageSer: LanguageService, private catserviceapi: CategoryService) {
+  }
+  ngDoCheck(): void {
+    this.updateItemsPerPage();
   }
   ngOnChanges(changes: SimpleChanges): void {
     // this.GetAllCAt();
