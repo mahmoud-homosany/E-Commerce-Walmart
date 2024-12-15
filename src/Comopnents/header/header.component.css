@@ -358,6 +358,10 @@
 
   }
 
+  .us {
+    display: none !important;
+  }
+
   .navbar-search {
     width: 190% !important;
   }
@@ -466,9 +470,9 @@
     padding: 2px;
   }
 
-  /* .smallhed {
-    display: block !important;
-  } */
+  .smallhed {
+    display: inline !important;
+  }
 
 }
 
