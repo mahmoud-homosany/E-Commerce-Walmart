@@ -1,4 +1,4 @@
-import { Component, HostListener, Input, NgModule, OnInit } from '@angular/core';
+import { Component, DoCheck, HostListener, Input, NgModule, OnInit } from '@angular/core';
 import { IproductEn, Product } from '../../InterFaces/product';
 import { ProductService } from '../../Services/Product/product.service';
 import { NgFor, NgIf } from '@angular/common';
@@ -18,7 +18,7 @@ import { LanguageService } from '../../Services/Language/language.service';
   styleUrl: './product-pagination-by-sub-cat.component.css'
 })
 
-export class ProductPaginationBySubCatComponent implements OnInit {
+export class ProductPaginationBySubCatComponent implements OnInit, DoCheck {
 
   CustomerId: string = ''
   favPrd: FavouritePrd = {} as FavouritePrd
@@ -36,6 +36,9 @@ export class ProductPaginationBySubCatComponent implements OnInit {
   constructor(private productapi: ProductService, private favService: FavouriteService,
     private coockieservice: CookieService, private _Language: LanguageService, private router: Router) {
 
+  }
+  ngDoCheck(): void {
+    this.updateItemsPerPage();
   }
 
   @HostListener('window:resize', ['$event'])
