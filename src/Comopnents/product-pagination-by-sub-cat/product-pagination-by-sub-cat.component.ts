@@ -31,7 +31,7 @@ export class ProductPaginationBySubCatComponent implements OnInit {
   @Input() subcatid: number = 0
   fillpagnationproduct: IproductEn[] = [] as IproductEn[];
   // fillpagnationproductar: IproductEn[] = [] as IproductEn[];
-  url = "http://localhost:5004/";
+  url = "https://walmart-dashboard.runasp.net";
 
   constructor(private productapi: ProductService, private favService: FavouriteService,
     private coockieservice: CookieService, private _Language: LanguageService, private router: Router) {
