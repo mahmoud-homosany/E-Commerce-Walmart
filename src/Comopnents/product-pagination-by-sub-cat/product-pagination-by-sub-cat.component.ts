@@ -47,10 +47,7 @@ export class ProductPaginationBySubCatComponent implements OnInit, DoCheck {
   }
 
   updateItemsPerPage() {
-    if (window.innerWidth <= 570) {
-      this.itemsPerPage = 2;
-
-    } else if (window.innerWidth >= 570 && window.innerWidth <= 768) {
+    if (window.innerWidth <= 768) {
       this.itemsPerPage = 3;
     } else if (window.innerWidth > 768 && window.innerWidth <= 990) {
       this.itemsPerPage = 4;
